@@ -110,7 +110,7 @@ class AmazonTest extends \PHPUnit_Framework_TestCase
      */
     public function checkDefaultScopes()
     {
-        $this->assertEquals(['profile', 'postcode'], $this->provider->getDefaultScopes());
+        $this->assertEquals(['profile', 'postal_code'], $this->provider->getDefaultScopes());
     }
 
     /**

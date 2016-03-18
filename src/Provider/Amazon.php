@@ -76,7 +76,12 @@ class Amazon extends AbstractProvider
 
     public function getDefaultScopes()
     {
-        return ['profile','postcode'];
+        return ['profile', 'postal_code'];
+    }
+
+    protected function getScopeSeparator()
+    {
+        return ' ';
     }
 
     public function getResourceOwnerDetailsUrl(AccessToken $token)
